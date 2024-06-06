@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/main.css" />
-
+	  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 		<title>About Me | Web Developer</title>
 	</head>
 	<body>
@@ -41,40 +41,44 @@
 					<img src="/img/showcase2.jpg" alt="" class="bio-image" />
 					<div class="bio own-bg-light">
 						<p class="p-l">
-							I am a dedicated and ambitious student currently pursuing a degree in Computer Science and Web Development at Herat University. With a strong passion for technology and its ever-evolving nature, I am constantly seeking opportunities to expand my knowledge and skills in this field.
-                            Furthermore, my passion for web development extends beyond the classroom. I have actively engaged in personal projects, where I have honed my skills in HTML, CSS, JavaScript, and various frameworks. These experiences have not only strengthened my technical abilities but also enhanced my creativity when it comes to designing user-friendly interfaces.
+							I am Laleh Walizadeh, a computer science student with a great interest in coding and technology. 
+							I started studying  website design a year ago, and this field is very interesting to me. 
+							Entering university in 2022 has strengthened my interest and made me more prepared to work in the field of information technology.
+                            Having a limited but useful experience in the field of website design, 
+							I wish to work on real and useful projects in the future and gain new experiences.
+							 As I am interested in learning and staying up-to-date in the field of technology,
+							  I am always looking for new opportunities to advance and improve my career.
+                            As a computer science student, with high motivation and perseverance,
+							 I am ready to advance in my academic and professional path and be recognized as 
+							 a successful professional in the field of technology. I am still looking for suitable job opportunities
+							  to apply my knowledge and skills and I will be happy if I get an opportunity to work in the field of technology
+							   and website design. I really like to make the world a better place by using the technology and skills available in this area.
 						</p>
 					</div>
-					<!-- Awards  -->
-					
 				</div>
+				<!-- Achievements  -->
 				<h2 class="section-title">Achievements</h2>
 			  <div class="bottom-line"></div>
-				<div class="award-1">
-					<i class="fas"></i>
-					<h3>Award One</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Reprehenderit, dolorum!
-					</p>
+			<!-- Slider main container -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide"><img src="../img/photo_2024-06-05_13-01-55.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="../img/photo_2024-06-05_13-01-55.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="../img/photo_2024-06-05_13-01-55.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="../img/photo_2024-06-05_13-01-55.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="../img/photo_2024-06-05_13-01-55.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="../img/photo_2024-06-05_13-01-55.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="../img/photo_2024-06-05_13-01-55.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="../img/photo_2024-06-05_13-01-55.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="../img/photo_2024-06-05_13-01-55.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="../img/photo_2024-06-05_13-01-55.jpg" alt=""></div>
 				</div>
-				<div class="award-2">
-					<i class="fas"></i>
-					<h3>Award two</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Reprehenderit, dolorum!
-					</p>
-				</div>
-				<div class="award-3">
-					<i class="fas"></i>
-					<h3>Award Three</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Reprehenderit, dolorum!
-					</p>
-				</div>
-			</section>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination" style="bottom: auto;"></div>
+			  </div>
+		
+	
+	    </section>
 
 		<!-- Section B -->
 
@@ -119,24 +123,21 @@
 		<!-- Section C -->
 		<section id="about-c" class="py-4 own-bg-light">
 			<div class="container">
-				<div class="about-courses">
+				
 					<h2 class="section-title">Courses</h2>
 					<div class="bottom-line"></div>
-					<img src="" alt="" />
 
-					<img src="" alt="" />
-					<img src="" alt="" />
+					<div class="about-logo">
+					<img src="../img/Asia_Afghanistan_University_Herat University_logo.png" alt="">
+					<img src="../img/welcome_logo_CTI_Logo_Stacked_Full_Colour.png" alt="">
+					<img src="../img/regular.png" alt="">
+					<img src="../img/Udemy_logo.svg.png" alt="">
+					
 				</div>
+				
 			</div>
 		</section>
-		<!-- Section D -->
-		<section id="about-d" class="py-4">
-			<div class="container">
-				<h2 class="section-title">Testimonials</h2>
-				<div class="bottom-line"></div>
-				<p class="lead text-center">Take a look at what my client say...</p>
-			</div>
-		</section>
+		
 		<!-- Footer -->
 		<footer id="main-footer">
 			<div class="footer-content container">
@@ -149,5 +150,20 @@
 				</div>
 			</div>
 		</footer>
+		<!-- swiper js -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <!-- Initialize Swiper -->
+ <script>
+	var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 3,
+		spaceBetween: 40,
+       
+	  pagination: {
+		el: '.swiper-pagination',
+		dynamicBullets: true,
+		clickable: true,
+	  },
+	});
+  </script>
 	</body>
 </html>

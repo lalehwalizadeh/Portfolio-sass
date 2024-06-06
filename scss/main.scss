@@ -1,4 +1,5 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 @import 'config';
 @import 'utiliti';
 @import 'work';
@@ -71,7 +72,6 @@ img {
 // Header:
 #header {
 	&-home {
-		// background: $bg-image no-repeat center right / cover;
 		height: 100vh;
 		background-color: $dark-color;
 		color: $light-color;
@@ -126,8 +126,20 @@ img {
 					font-size: 2rem;
 					font-weight: bold;
 				}
+				img{
+					width: 50px;
+					color: aqua;
+					
+				}
 			}
 			div {
+				ul{
+					text-align: center;
+					justify-content: center;
+					align-items: center;
+					padding: 5px;
+					margin: 5px;
+				}
 				padding: 3rem 0;
 				&:nth-child(odd) {
 					background: $secondary-light;
@@ -237,6 +249,13 @@ img {
 			color: $main-color;
 			margin: 1rem;
 		}
+
+		.swiper-slide{
+			img{
+				width: 400px;
+				margin: 15px;
+			}
+		}
 	}
 	// About B
 	&-b {
@@ -262,19 +281,27 @@ img {
 				padding-right: 7px;
 			}
 		}
+		
+		 
 	}
 	// About C
 
+
 	&-c {
+		
 		.adout-logos {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			grid-gap: 2rem;
-		}
-		img {
-			width: 70%;
-		}
+
+			}
+				img {
+					width: 20%;
+					
+				}
 	}
+
+
 }
 
 // Contact page
@@ -336,9 +363,8 @@ img {
 
 	.footer-content {
 		display: flex;
+		justify-content: space-between;
 		height: 5rem;
-		justify-content: center;
-		text-align: center;
 		align-items: center;
 
 		.social .fab {
@@ -355,6 +381,7 @@ img {
 				background: $main-color;
 				color: $light-color;
 			}
+			
 		}
 	}
 }
