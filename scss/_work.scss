@@ -81,6 +81,13 @@
 		width: 100%;
 		top: 50%;
 		transform: translateY(-50%);
+
+		a{
+			color: white;
+		}
+		img{
+			width: 1rem;
+		}
 	}
     &-text-title{
         font-size: 2rem;

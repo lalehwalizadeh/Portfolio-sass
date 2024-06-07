@@ -10,6 +10,10 @@
 			rel="stylesheet"
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -161,9 +165,9 @@
 						<i class="fas fa-desktop fa-2x"></i>
 						<h3>Backend</h3>
 						<p>
-							I am currently learning Backend and this part of
-							software development is very interesting to me because here I can
-							create complex and powerful systems with the support of servers,
+							I am currently learning Backend and this part of software
+							development is very interesting to me because here I can create
+							complex and powerful systems with the support of servers,
 							databases, and business logic. This section gives me the
 							opportunity to improve the security of data and optimize the
 							performance of systems by utilizing advanced algorithms.
@@ -173,7 +177,7 @@
 						<i class="fas fa-object-ungroup fa-2x"></i>
 						<h3>UI/UX</h3>
 						<p>
-							 Beside web development, I am interested in design too , and I use
+							Beside web development, I am interested in design too , and I use
 							colors, fonts, images, and various graphic elements to create
 							beautiful and efficient user experiences. I focus on how users
 							interact with systems and applications to provide an optimized and
@@ -184,11 +188,11 @@
 						<i class="fas fa-thumbs-up fa-2x"></i>
 						<h3>Visual Design</h3>
 						<p>
-							 Design is like a hobby for me, and I create
-							beautiful and captivating graphic designs with creativity and a
-							sense of beauty. This part of my work allows me to bring beautiful
-							and unique patterns to life using graphic design software and
-							present them to users.
+							Design is like a hobby for me, and I create beautiful and
+							captivating graphic designs with creativity and a sense of beauty.
+							This part of my work allows me to bring beautiful and unique
+							patterns to life using graphic design software and present them to
+							users.
 						</p>
 					</div>
 				</div>
@@ -242,52 +246,63 @@
 				<h2 class="section-title">My Projects Implementation Process</h2>
 				<div class="bottom-line"></div>
 				<p class="lead">I usually start with some steps.</p>
-				<div class="process">
-					<div>
-						<div class="process-icon">
-							<div class="process-step">1</div>
-						</div>
-
-						<h3>Review The Project</h3>
-						<p>
-							This step is the most important step in doing any work. you should
-							carefully review all the details of the project and fully
-							understand what is being asked of you, so this is the first step!
-						</p>
-					</div>
-					<div>
-						<i class="process-icon">
-							<div class="process-step">2</div>
-						</i>
-
-						<h3>Search about</h3>
-						<p>
-							After I know what I need to do, I start to research about it and
-							brainstorm ideas on how to do it better.!
-						</p>
-					</div>
-					<div>
-						<i class="process-icon">
-							<div class="process-step">3</div>
-						</i>
-
-						<h3>Planning the steps</h3>
-						<p>
-							At this stage I structure all the information I got and plan what
-							to do first and what to do next!
-						</p>
-					</div>
-					<div>
-						<i class="process-icon">
-							<div class="process-step">4</div>
-						</i>
-
-						<h3>Start to work on</h3>
-						<p>
-							And now I have a very regular plan for the implementation of the
-							desired project,according to which, I will start working.
-						</p>
-					</div>
+				<div class="accordion">
+					<ul>
+						<li>
+							<input type="radio" name="accordion" id="first" checked />
+							<label for="first"
+								><h3>Review The Project</h3>
+								(Step 1)</label
+							>
+							<div class="content">
+								<p>
+									This step is the most important step in doing any work. you
+									should carefully review all the details of the project and
+									fully understand what is being asked of you, so this is the
+									first step!
+								</p>
+							</div>
+						</li>
+						<li>
+							<input type="radio" name="accordion" id="second" />
+							<label for="second">
+								<h3>Search about</h3>
+								(step 2)
+							</label>
+							<div class="content">
+								<p>
+									After I know what I need to do, I start to research about it
+									and brainstorm ideas on how to do it better.!
+								</p>
+							</div>
+						</li>
+						<li>
+							<input type="radio" name="accordion" id="third" />
+							<label for="third">
+								<h3>Planning the steps</h3>
+								(step 3)
+							</label>
+							<div class="content">
+								<p>
+									At this stage I structure all the information I got and plan
+									what to do first and what to do next!
+								</p>
+							</div>
+						</li>
+						<li>
+							<input type="radio" name="accordion" id="forth" />
+							<label for="forth">
+								<h3>Start to work on</h3>
+								(step 4)
+							</label>
+							<div class="content">
+								<p>
+									And now I have a very regular plan for the implementation of
+									the desired project,according to which, I will start working.
+								</p>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -296,8 +311,10 @@
 			<div class="footer-content container">
 				<p>Copyright &copy; 2024 , All Rights Reserved</p>
 				<div class="social">
-					<i class="bi bi-twitter-x"></i>
-					<i class="bi bi-instagram"></i>
+					<div>
+						<i class="bi bi-twitter-x"></i>
+					</div>
+					<i class="bi bi-instagram"> hello</i>
 					<i class="bi bi-telegram"></i>
 					<i class="bi bi-github"></i>
 					<i class="bi bi-linkedin"></i>
@@ -305,5 +322,6 @@
 			</div>
 		</footer>
 		<script src="Js/typewriter.js"></script>
+		<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
