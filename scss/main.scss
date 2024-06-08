@@ -1,5 +1,4 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-
 @import 'config';
 @import 'utiliti';
 @import 'work';
@@ -16,6 +15,7 @@ body {
 	line-height: 1.6;
 	background: $light-color;
 }
+
 a {
 	text-decoration: none;
 	color: $dark-color;
@@ -23,6 +23,7 @@ a {
 ul {
 	list-style: none;
 }
+
 h2,
 h3,
 h4 {
@@ -128,7 +129,6 @@ img {
 				}
 				img {
 					width: 50px;
-					color: aqua;
 				}
 			}
 			div {
@@ -152,22 +152,22 @@ img {
 		}
 	}
 	&-c {
-	.accordion {
+		.accordion {
 			max-width: 800px;
 			padding: 0 1.5rem;
 			margin: auto;
 			overflow: hidden;
 			display: grid;
-			
+
 			text-align: center;
 			justify-content: center;
-			
-			ul{
+
+			ul {
 				box-sizing: border-box;
 				padding: 10px;
 				margin: 10px;
 
-				li{
+				li {
 					margin: 10px;
 					padding: 10px;
 				}
@@ -176,7 +176,6 @@ img {
 		.accordion li {
 			list-style: none;
 			width: 100%;
-			
 
 			border-radius: 8px;
 			background-color: $light-color;
@@ -303,13 +302,15 @@ img {
 	// About C
 
 	&-c {
-		.adout-logos {
+		.container .about-logo {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
-			grid-gap: 2rem;
-		}
-		img {
-			width: 20%;
+			grid-gap: 1rem;
+			justify-content: center;
+			margin-top: 2rem;
+			img {
+				width: 70%;
+			}
 		}
 	}
 }
@@ -363,7 +364,7 @@ img {
 			text-align: center;
 
 			div {
-				img {
+				svg {
 					width: 40px;
 					margin-bottom: 1rem;
 				}
@@ -375,30 +376,39 @@ img {
 // Footer:
 #main-footer {
 	background: $dark-color;
-	color: #fff;
-	height: 5rem;
+	color: $secondary-light;
+	height: 6rem;
 
 	.footer-content {
 		display: flex;
+		position: relative;
 		justify-content: space-between;
 		height: 5rem;
 		align-items: center;
+		
+		
+	}
+	svg {
+		fill: $secondary-light;
+		width: 20px;
+		height: 20px;
+		z-index: 3;
+	}
+	.social {
+		
 
-		.social .fab {
-			margin-right: 1rem;
-			border: 2px #fff solid;
-			border-radius: 50%;
-			height: 20px;
-			width: 20px;
-			line-height: 20px;
-			text-align: center;
-			padding: 0.5rem;
-
-			&:hover {
-				background: $main-color;
-				color: $light-color;
-				width: 25px;
-			}
+		a {
+			display: inline-block;
+			width: 27px;
+			height: 27px;
+			text-decoration: none;
+			margin: 0.5rem;
+		}
+		svg:hover {
+			width: 26px;
+			height: 26px;
+			transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			fill: $medium-color;
 		}
 	}
 }
