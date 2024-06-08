@@ -4,6 +4,7 @@
   "description": "Portfolio website",
   "main": "index.js",
   "scripts": {
+    "build":"sass main.scss main.css && echo 'build compelet'",
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Laleh",

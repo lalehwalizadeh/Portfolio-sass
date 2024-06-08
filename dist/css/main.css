@@ -9751,7 +9751,11 @@ img {
     #header-home .header-content {
       padding-top: 5rem; } }
 
-@media (max-width: 500px) {
+@media (max-width: 820px) {
+  #home-a .specials {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 520px) {
   #main-nav li {
     padding: 1rem; }
   #header-home {
@@ -9802,7 +9806,13 @@ img {
 
 @media (max-width: 820px) {
   #about-a .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; } }
+    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
+  #main-footer {
+    height: 7rem; }
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem; } }
 
 @media (max-height: 580px) {
   #header-home .header-content {
