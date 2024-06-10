@@ -9457,6 +9457,9 @@ input[class^='own-btn-']:hover {
   margin: 0;
   padding: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: 'Bellefair', Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -9505,6 +9508,8 @@ img {
   height: 100vh;
   background-color: #333;
   color: #E3FEF7; }
+  #header-home .txt-type {
+    color: #135D66; }
   #header-home .header-content {
     text-align: center;
     padding-top: 20%;
@@ -9514,7 +9519,6 @@ img {
       line-height: 1.2; }
 
 #header-inner {
-  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
   background-color: #333;
   height: 5.5rem;
   border-bottom: 3px solid #135D66; }
@@ -9522,11 +9526,11 @@ img {
 #home-a .specials {
   margin-top: 3rem;
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(4, 1fr); }
-  #home-a .specials .fas {
-    color: #003C43;
-    padding-bottom: 0.4rem; }
+  #home-a .specials p {
+    text-align: justify;
+    scroll-behavior: smooth; }
 
 #home-b .stats {
   display: grid;
@@ -9627,7 +9631,8 @@ img {
   padding: 0.8rem;
   background: #c8f7ea; }
   #about-a .bio p {
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: justify; }
 
 #about-a .award-1 {
   grid-area: aw1; }
@@ -9686,7 +9691,7 @@ img {
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields input {
-    height: 25px;
+    height: 45px;
     border-radius: 5px;
     border: 0.01px solid #135D66; }
   #contact-a .text-fields .name-input {
@@ -9717,29 +9722,33 @@ img {
 #main-footer {
   background: #333;
   color: #c8f7ea;
-  height: 6rem; }
+  height: 5rem;
+  padding: 1rem 2rem; }
   #main-footer .footer-content {
     display: flex;
     position: relative;
     justify-content: space-between;
-    height: 5rem;
+    height: 4rem;
     align-items: center; }
   #main-footer svg {
     fill: #c8f7ea;
     width: 20px;
     height: 20px;
     z-index: 3; }
-  #main-footer .social a {
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    text-decoration: none;
-    margin: 0.5rem; }
-  #main-footer .social svg:hover {
-    width: 26px;
-    height: 26px;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    fill: #135D66; }
+  #main-footer .social {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+    #main-footer .social a {
+      display: inline-block;
+      width: 27px;
+      height: 27px;
+      text-decoration: none;
+      margin: 0.5rem; }
+    #main-footer .social svg:hover {
+      width: 26px;
+      height: 26px;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      fill: #135D66; }
 
 @media (max-width: 920px) {
   .sidebar {
@@ -9751,9 +9760,9 @@ img {
     #header-home .header-content {
       padding-top: 5rem; } }
 
-@media (max-width: 820px) {
+@media (max-width: 450px) {
   #home-a .specials {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: 1fr; } }
 
 @media (max-width: 520px) {
   #main-nav li {
@@ -9765,7 +9774,6 @@ img {
     height: 10rem; }
   #header-home .header-content {
     font-size: 1rem; }
-  #home-a .specials,
   #home-b .stats,
   #home-c .process,
   #contact-b .contact-info,
@@ -9787,6 +9795,8 @@ img {
     grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
   #about-a .swiper-slide img {
     width: 350px; }
+  #work-a .item .item-text h3, #work-a .item .item-text .h3 {
+    font-size: 16px; }
   #contact-a .text-fields {
     grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
   #contact-b div {
@@ -9798,21 +9808,35 @@ img {
       margin-bottom: 0;
       padding-bottom: 0; }
   #main-footer {
-    height: 7rem; }
+    height: 7rem;
+    justify-content: center;
+    display: flex; }
+    #main-footer .social a {
+      margin: 0; }
     #main-footer .footer-content {
+      margin: 1rem;
+      position: absolute;
       flex-direction: column;
+      justify-content: center;
       padding: 1rem;
       height: 5rem; } }
 
-@media (max-width: 820px) {
+@media (max-width: 820px) and (min-width: 500px) {
+  #home-a .specials {
+    grid-template-columns: repeat(2, 1fr); }
   #about-a .about-info {
     grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
-  #main-footer {
-    height: 7rem; }
-    #main-footer .footer-content {
-      flex-direction: column;
-      padding: 1rem;
-      height: 5rem; } }
+  #work-a .item-text-wrap p {
+    font-size: 10px; }
+  #work-a .item-text-title {
+    font-size: 1rem; }
+  #work-a .item-text-category {
+    font-size: 12px; }
+  #work-a .item-text a {
+    font-size: 10px; }
+    #work-a .item-text a img {
+      width: 9px;
+      height: 9px; } }
 
 @media (max-height: 580px) {
   #header-home .header-content {
