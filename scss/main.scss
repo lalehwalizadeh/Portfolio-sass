@@ -45,6 +45,8 @@ img {
 }
 
 // Main Nav:
+
+
 #main-nav {
 	display: flex;
 	justify-content: space-between;
@@ -69,6 +71,7 @@ img {
 		}
 		&.current {
 			border-color: $light-color;
+			font-weight: bold;
 		}
 	}
 }
@@ -176,6 +179,7 @@ img {
 				li {
 					margin: 10px;
 					padding: 10px;
+					
 				}
 			}
 		}

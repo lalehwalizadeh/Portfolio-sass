@@ -9502,7 +9502,8 @@ img {
     #main-nav a:hover {
       border-color: #E3FEF7; }
     #main-nav a.current {
-      border-color: #E3FEF7; }
+      border-color: #E3FEF7;
+      font-weight: bold; }
 
 #header-home {
   height: 100vh;
