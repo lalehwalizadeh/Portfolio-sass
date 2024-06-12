@@ -46,7 +46,9 @@ img {
 
 // Main Nav:
 
-
+body{
+	scroll-behavior: smooth;
+}
 #main-nav {
 	display: flex;
 	justify-content: space-between;
@@ -79,6 +81,7 @@ img {
 // Header:
 #header {
 	&-home {
+		background-image: url('img/showcase2.jpg');
 		height: 100vh;
 		background-color: $dark-color;
 		color: $light-color;

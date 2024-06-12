@@ -9484,6 +9484,9 @@ img {
   color: #E3FEF7;
   text-transform: uppercase; }
 
+body {
+  scroll-behavior: smooth; }
+
 #main-nav {
   display: flex;
   justify-content: space-between;
@@ -9506,6 +9509,7 @@ img {
       font-weight: bold; }
 
 #header-home {
+  background-image: url("img/showcase2.jpg");
   height: 100vh;
   background-color: #333;
   color: #E3FEF7; }
