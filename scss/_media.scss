@@ -20,6 +20,14 @@
 			}
 		}
 	}
+	#contact{
+		&-a{
+			button[type='submit'] {
+				width: 150px;
+				
+			}
+		}
+	}
 }
 
 // smart phone

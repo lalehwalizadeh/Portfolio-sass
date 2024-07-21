@@ -9767,7 +9767,9 @@ body {
 
 @media (max-width: 450px) {
   #home-a .specials {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #contact-a button[type='submit'] {
+    width: 150px; } }
 
 @media (max-width: 520px) {
   #main-nav li {
